@@ -1,0 +1,9 @@
+<div class="container py-5" id="blog">
+    <h2 class="text-center mb-4">Our Blog</h2>
+    <ngb-carousel *ngIf="images.length > 0" class="rounded shadow">
+      <ng-template ngbSlide *ngFor="let img of images">
+        <img [src]="img" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Blog Image" />
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  
