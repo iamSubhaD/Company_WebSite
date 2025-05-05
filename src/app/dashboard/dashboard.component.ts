@@ -5,11 +5,12 @@ import { ServicesComponent } from "../components/section/services/services.compo
 import { ContactComponent } from "../components/section/contact/contact.component";
 import { BlogComponent } from "../components/section/blog/blog.component";
 import { FooterComponent } from "../components/footer/footer.component";
+import { IntroComponent } from "../components/section/intro/intro.component";
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [HeaderComponent, AboutComponent, ServicesComponent, ContactComponent, BlogComponent, FooterComponent],
+  imports: [HeaderComponent, AboutComponent, ServicesComponent, ContactComponent, BlogComponent, FooterComponent, IntroComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
