@@ -1,22 +1,14 @@
 <div id="intro">
-  <ngb-carousel *ngIf="slides.length > 0" class="rounded shadow">
+  <ngb-carousel *ngIf="slides.length > 0" class="rounded shadow" [interval]="5000">
     <ng-template ngbSlide *ngFor="let slide of slides">
       <div
-        class="position-relative d-flex w-100 align-items-center justify-content-center"
-        [ngStyle]="{
-          height: '400px',
-          background: slide.background
-        }"
+        class="position-relative d-flex flex-column w-100 align-items-center justify-content-center slide-container"
+        [ngClass]="slide.backgroundClass"
       >
-        <div *ngIf="slide.content">
-          <div [ngStyle]="slide.content.style">
-            {{ slide.content.text }}
-          </div>
-        </div>
+        <ng-container *ngFor="let block of slide.content">
+          <div [ngClass]="block.class" [innerHTML]="block.text"></div>
+        </ng-container>
       </div>
     </ng-template>
   </ngb-carousel>
-  
-      
 </div>
-  

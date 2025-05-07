@@ -3,15 +3,39 @@ html {
   }
   
 
-  @keyframes fadeInOut {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+/* Animations (already in style.css, you may move or keep shared ones there) */
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
   }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
   
