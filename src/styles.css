@@ -3,7 +3,7 @@ html {
   }
   
 
-/* Animations (already in style.css, you may move or keep shared ones there) */
+/* Css for animations*/
 @keyframes fadeInOut {
   0% {
     opacity: 1;
@@ -39,3 +39,24 @@ html {
   }
 }
   
+
+/* Css for small screen nav bar pop up*/
+@media (max-width: 991.98px) { 
+  .navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 0.5rem;
+    margin-left: -0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 0.5rem;
+    color: white !important; 
+  }
+}
+
+
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 150%; }
+}

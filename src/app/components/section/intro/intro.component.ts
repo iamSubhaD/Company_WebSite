@@ -14,17 +14,19 @@ export class IntroComponent {
     {
       backgroundClass: 'bg-slide-1',
       content: [
-        { text: 'Ideate Implement Elevate', class: 'slide-1-text-1' },
-        // {
-        //   text: `We transform business through cutting-edge technology management, combining a Stoic<br> mindset with management consulting skillset and deep tech expertise`,
-        //   class: 'slide-1-text-2'
-        // }
+        { text: 'RAFFOLD', class: 'slide-1-text-1' },
+        {
+          text: `Ideate Implement Elevate`,
+          class: 'slide-1-text-2'
+        }
       ]
     },
     {
       backgroundClass: 'bg-slide-2',
       content: [
-        { text: 'Angular Projects with Custom Layouts', class: 'slide-2-text-1' }
+        { text: 'Our Expertise', class: 'slide-2-text-1' },
+        { texts: ['Web Development', 'App Development', 'E-Learning'], class: 'slide-2-expertise' },
+        { text2: ['Business Solution', 'Certification', 'Application Support'], class: 'slide-2-expertise' }
       ]
     }
   ];

@@ -1,7 +1,16 @@
 {
     "about": {
       "title": "Über uns",
-      "description": "Wir sind ein leidenschaftliches Team, das hochwertige Weblösungen entwickelt, um Benutzererlebnisse zu verbessern und geschäftlichen Mehrwert zu schaffen."
+      "description": "Bei Raffold unterstützen wir Unternehmen dabei, im digitalen Zeitalter erfolgreich zu sein. Wir entwickeln intuitive UI/UX-Lösungen und erstellen wirkungsvolle Websites, die Ihre Zielgruppe begeistern. Neben Design bieten wir umfassende Technologieschulungen zur Weiterbildung Ihres Teams sowie strategische Geschäftslösungen und aussagekräftige Geschäftsanalysen für mehr Wachstum. Arbeiten Sie mit Rio zusammen, um Ihre Ideen umzusetzen und nachhaltigen Erfolg zu erzielen.",
+      "section1": "Entwicklung von Web- und mobilen Anwendungen für E-Commerce, E-Learning, Portfolio mit personalisierten und benutzerdefinierten Funktionen.",
+      "section2": "Wir bieten Schulungen zu Angular, React, Cloud Computing und allen anderen führenden Technologien mit gültigen Zertifizierungen an.",
+      "section3": "Wir bieten E-Commerce-Lösungen, Content-Management-Plattformen, Geschäftsprozesse und Buchhaltungsanwendungen sowie Geodatenanalysen und -lösungen."
+    },
+    "header": {
+      "About": "Um",
+      "Services": "Dienstleistungen",
+      "Blog": "Blog",
+      "Contact": "Kontakt"
     },
     "services": {
       "title": "Unsere Dienstleistungen"

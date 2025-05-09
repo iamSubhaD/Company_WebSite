@@ -8,7 +8,7 @@
 
 /* Backgrounds */
 .bg-slide-1 {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: radial-gradient(circle,rgba(174, 215, 238, 1) 0%, rgba(148, 233, 151, 1) 100%);
 }
 
 .bg-slide-2 {
@@ -17,7 +17,32 @@
 
 /* Text styles */
 .slide-1-text-1 {
-  color: white;
+  color: black;
+  font-weight: 800;
+  font-size: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-1-text-1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  transform: skewX(-25deg);
+  animation: shine 1.5s infinite linear;
+}
+
+.slide-1-text-2 {
+  color: black;
+  font-weight: 600;
   font-size: 45px;
   padding: 10px;
   border-radius: 10px;
@@ -26,22 +51,36 @@
   animation: typing 6s ease-in-out infinite;
 }
 
-.slide-1-text-2 {
+.slide-2-text-1 {
+  color: black;
+  font-weight: 700;
+  font-size: 35px;
+  padding: 30px;
+  text-align: left;
+}
+
+/* .slide-2-text-2 {
   color: black;
   font-size: 24px;
-  padding: 10px;
-  margin-top: 10px;
-  text-align: center;
-  animation: scaleUp 2s ease-in-out infinite;
-}
-
-.slide-2-text-1 {
-  color: #fff;
-  font-size: 24px;
   background-color: #00000066;
-  padding: 30px;
-  border-left: 5px solid yellow;
+  padding: 8px;
+  border: 2px solid yellow;
   text-align: left;
   animation: fadeInOut 6s ease-in-out infinite;
+} */
+
+.slide-2-expertise {
+  padding-top: 0.5rem;
 }
 
+/* Style for individual expertise boxes */
+.slide-2-expertise-item {
+  color: white;
+  font-size: 24px;
+  background-color: #00000066;
+  padding: 8px 15px; /* Adjust padding as needed */
+  border: 2px solid yellow;
+  border-radius: 5px; /* Optional: Add rounded corners */
+  text-align: center; /* Center the text within the box */
+  animation: fadeInOut 2s ease-in-out infinite;
+}

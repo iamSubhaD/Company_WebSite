@@ -1,7 +1,16 @@
 {
     "about": {
       "title": "About Us",
-      "description": "We are a passionate team building high-quality web solutions to enhance user experiences and deliver business value."
+      "description": "At Raffold, we empower businesses to thrive in the digital age. We craft intuitive UI/UX solutions and build impactful websites that captivate your audience. Beyond design, we offer comprehensive technology training to upskill your team and provide strategic business solutions and insightful business analysis to drive growth. Partner with Rio to transform your ideas into reality and achieve sustainable success.",
+      "section1": "Web and Mobile application development for E-Commerce, E-Learning, Portfolio with personalized and custom feature.",
+      "section2": "We provide trainings on Angular, React, Cloud Computing and all other leading technologies with valid certifications.",
+      "section3": "We provide E-commerce Solutions, Content management platform, Business Processes and Accounting application, Geospatial analytics and Solutions."
+    },
+    "header": {
+      "About": "About",
+      "Services": "Services",
+      "Blog": "Blog",
+      "Contact": "Contact"
     },
     "services": {
       "title": "Our Services"

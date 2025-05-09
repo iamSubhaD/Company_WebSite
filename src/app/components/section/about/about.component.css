@@ -1,0 +1,19 @@
+.section1{
+    color: #de52dc;
+    font-weight: 400;
+    
+}
+
+.commonSection{
+    display: grid;
+    place-items: center;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.description{
+    font-size: 1.5rem;
+}

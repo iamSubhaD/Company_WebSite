@@ -6,7 +6,11 @@
         [ngClass]="slide.backgroundClass"
       >
         <ng-container *ngFor="let block of slide.content">
-          <div [ngClass]="block.class" [innerHTML]="block.text"></div>
+          <div *ngIf="!block.texts" [ngClass]="block.class" [innerHTML]="block.text"></div>
+          <div *ngIf="block.texts" class="d-flex justify-content-center gap-3"> <div *ngFor="let expertise of block.texts" class="slide-2-expertise-item">{{ expertise }}</div>
+          </div>
+          <div *ngIf="block.text2" class="d-flex justify-content-center gap-3"> <div *ngFor="let expertise of block.text2" class="slide-2-expertise-item">{{ expertise }}</div>
+          </div>
         </ng-container>
       </div>
     </ng-template>
