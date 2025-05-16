@@ -15,6 +15,17 @@
     "services": {
       "title": "Unsere Dienstleistungen"
     },
+    "contact": {
+      "title": "Nehmen Sie Kontakt auf",
+      "salutation": "Wir freuen uns, von Ihnen zu hören! Unsere Kontaktdaten finden Sie unten. Alternativ können Sie uns auch eine Nachricht senden.",
+      "addressTitle": "Unsere Adresse",
+      "address": "Westbengalen, Indien",
+      "emailTitle": "Schicken Sie uns eine E-Mail",
+      "email": "Kontakt raffold.com",
+      "callTitle": "Rufen Sie uns an",
+      "call": "+91 96325 87415",
+      "followTitle": "Folgen Sie uns"
+    },
     "language": "English"
   }
   

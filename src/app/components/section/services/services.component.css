@@ -1,0 +1,47 @@
+.card {
+  min-height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.cardTitle{
+    font-size: 1.5rem;
+}
+
+.cardDescription{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.icon-button:hover {
+  color: #0056b3;
+}
+
+.icon-button[disabled] {
+  color: #ccc;
+  cursor: not-allowed;
+}

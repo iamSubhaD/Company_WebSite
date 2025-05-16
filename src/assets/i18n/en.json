@@ -15,6 +15,17 @@
     "services": {
       "title": "Our Services"
     },
+    "contact": {
+      "title": "Get in Touch",
+      "salutation": "We'd love to hear from you! Please find our contact details below or send us a message.",
+      "addressTitle": "Our Address",
+      "address": "West Bengal, India",
+      "emailTitle": "Email Us",
+      "email": "contact raffold.com",
+      "callTitle": "Call Us",
+      "call": "+91 96325 87415",
+      "followTitle": "Follow Us"
+    },
     "language": "Deutsch"
   }
   

@@ -1,18 +1,87 @@
-<div class="container py-5" id="services">
-    <h2 class="text-center">Our Services</h2>
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <h4>Web Development</h4>
-        <p>Creating responsive and robust websites.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <h4>UI/UX Design</h4>
-        <p>Designing intuitive interfaces for seamless experiences.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <h4>SEO Optimization</h4>
-        <p>Improving your site ranking and visibility online.</p>
-      </div>
+<div class="container my-4">
+  <div class="row">
+      <h2 class="text-center title">Our Services</h2>
     </div>
+  <div class="d-flex justify-content-between align-items-center mb-2">
+
+    <!-- Left Arrow -->
+    <button class="icon-button"
+        (click)="currentIndex = currentIndex > 0 ? currentIndex - 1 : currentIndex"
+        [disabled]="currentIndex === 0">
+  <fa-icon [icon]="faChevronLeft"></fa-icon>
+</button>
+    
+    <!-- Section Wrapper -->
+    <div class="row flex-nowrap overflow-hidden w-100 mx-2">
+
+      <!-- Section 1 -->
+      <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 0 && currentIndex + 3 > 0">
+        <div class="card h-100 mx-2">
+          <div class="card-body">
+            <h4 class="card-title cardTitle">Web Development</h4>
+            <h6 class="card-text cardDescription">Creating responsive and robust websites.</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 1 && currentIndex + 3 > 1">
+        <div class="card h-100 mx-2">
+          <div class="card-body">
+            <h5 class="card-title cardTitle">UI/UX Design</h5>
+            <h6 class="card-text cardDescription">Designing intuitive interfaces for seamless experiences.</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 2 && currentIndex + 3 > 2">
+        <div class="card h-100 mx-2">
+          <div class="card-body">
+            <h5 class="card-title cardTitle">SEO Optimization</h5>
+            <h6 class="card-text cardDescription">Improving your site ranking and visibility online.</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 3 && currentIndex + 3 > 3">
+        <div class="card h-100 mx-2">
+          <div class="card-body">
+            <h5 class="card-title cardTitle">Mobile Application</h5>
+            <h6 class="card-text cardDescription">Creating mobile robust mobile application for android</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 4 && currentIndex + 3 > 4">
+        <div class="card h-100 mx-2">
+          <div class="card-body">
+            <h5 class="card-title cardTitle">E Learning</h5>
+            <h6 class="card-text cardDescription">We provide online training. </h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 5 && currentIndex + 3 > 5">
+        <div class="card h-100 mx-2">
+          <div class="card-body">
+            <h5 class="card-title cardTitle">Business Solution</h5>
+            <h6 class="card-text cardDescription">We provide business solutions for client.</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Arrow -->
+    <button class="icon-button"
+        (click)="currentIndex = currentIndex < 3 ? currentIndex + 1 : currentIndex"
+        [disabled]="currentIndex >= 3">
+  <fa-icon [icon]="faChevronRight"></fa-icon>
+</button>
+
   </div>
-  
+</div>

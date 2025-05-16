@@ -7,3 +7,14 @@
   margin-top: -4rem; /* Ensure this matches your header height */
   padding-top: 2rem; /* To prevent potential margin collapsing */
 }
+
+#blog{
+  /* margin-bottom: 20rem; */
+}
+
+
+#contact {
+  margin-top: 4rem; /* Ensure this matches your header height */
+  padding-top: 2rem; /* To prevent potential margin collapsing */
+
+}

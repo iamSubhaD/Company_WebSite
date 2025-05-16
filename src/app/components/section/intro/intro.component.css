@@ -37,7 +37,7 @@
   height: 100%;
   background: linear-gradient(90deg, transparent, white, transparent);
   transform: skewX(-25deg);
-  animation: shine 1.5s infinite linear;
+  animation: shine 4s infinite linear;
 }
 
 .slide-1-text-2 {
