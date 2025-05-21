@@ -10,10 +10,29 @@
       "About": "About",
       "Services": "Services",
       "Blog": "Blog",
-      "Contact": "Contact"
+      "Contact": "Contact",
+      "Feedback": "Feedback"
     },
     "services": {
-      "title": "Our Services"
+      "title": "Our Services",
+      "webDevelopmentTitle": "Web Development",
+      "webDevelopmentDescription": "Creating responsive and robust websites.",
+      "uiuxTitle": "UI/UX Design",
+      "uiuxDescription": "Designing intuitive interfaces for seamless experiences.",
+      "seoTitle": "SEO Optimization",
+      "seoDescription": "Improving your site ranking and visibility online.",
+      "mobileAppTitle": "Mobile Application",
+      "mobileAppDescription": "Creating mobile robust mobile application for android",
+      "eLearningTitle": "E Learning",
+      "eLearningDescription": "We provide online training.",
+      "businessSolutionTitle": "Business Solution",
+      "businessSolutionDescription": "We provide business solutions for client."
+    },
+    "clientFeedback": {
+      "title": "Client Feedback",
+      "feedback1": "Working with this team was a fantastic experience. Their professionalism and dedication are unmatched.",
+      "feedback2": "Their development process is transparent and effective. Highly recommended for quality and timely delivery.",
+      "feedback3": "Excellent communication and support throughout the project. We’re extremely satisfied with the results."
     },
     "contact": {
       "title": "Get in Touch",
@@ -24,7 +43,13 @@
       "email": "contact raffold.com",
       "callTitle": "Call Us",
       "call": "+91 96325 87415",
-      "followTitle": "Follow Us"
+      "followTitle": "Follow Us",
+      "sendMessage": "Send Us a Message",
+      "textBox1": "Your Name",
+      "textBox2": "Your Email Address",
+      "textBox3": "Your Company Name (Optional)",
+      "textBox4": "Your Message",
+      "sendButton": "Send Message"
     },
     "language": "Deutsch"
   }

@@ -4,7 +4,8 @@
 }
 
 .card:hover {
-  transform: scale(1.03);
+  border-color: #007bff;
+  /* transform: scale(1.03); */
 }
 
 button[disabled] {
@@ -44,4 +45,8 @@ button[disabled] {
 .icon-button[disabled] {
   color: #ccc;
   cursor: not-allowed;
+}
+
+.cardIcon{
+    font-size: 2rem;
 }

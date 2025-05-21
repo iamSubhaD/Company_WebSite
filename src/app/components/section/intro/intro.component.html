@@ -1,15 +1,41 @@
-<div id="intro">
-  <ngb-carousel *ngIf="slides.length > 0" class="rounded shadow" [interval]="5000">
-    <ng-template ngbSlide *ngFor="let slide of slides">
+<div id="intro" class="carousel-wrapper">
+  <!-- Progress Bar Indicators -->
+  <div class="carousel-progress-container">
+    <div *ngFor="let slide of slides; let i = index" class="progress-indicator">
+      <div
+        class="progress-bar"
+        [class.active]="i === currentSlide"
+        [style.animationDuration.ms]="interval"
+        [attr.data-key]="i"
+      ></div>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <ngb-carousel
+    *ngIf="slides.length > 0"
+    class="rounded shadow"
+    [interval]="interval"
+    (slide)="onSlideChange($event)"
+  >
+    <ng-template ngbSlide *ngFor="let slide of slides; let idx = index">
       <div
         class="position-relative d-flex flex-column w-100 align-items-center justify-content-center slide-container"
         [ngClass]="slide.backgroundClass"
       >
         <ng-container *ngFor="let block of slide.content">
-          <div *ngIf="!block.texts" [ngClass]="block.class" [innerHTML]="block.text"></div>
-          <div *ngIf="block.texts" class="d-flex justify-content-center gap-3"> <div *ngFor="let expertise of block.texts" class="slide-2-expertise-item">{{ expertise }}</div>
+          <div *ngIf="!block.texts && !block.text2" [ngClass]="block.class" [innerHTML]="block.text"></div>
+
+          <div *ngIf="block.texts" class="d-flex justify-content-center gap-3">
+            <div *ngFor="let expertise of block.texts" class="slide-2-expertise-item">
+              {{ expertise }}
+            </div>
           </div>
-          <div *ngIf="block.text2" class="d-flex justify-content-center gap-3"> <div *ngFor="let expertise of block.text2" class="slide-2-expertise-item">{{ expertise }}</div>
+
+          <div *ngIf="block.text2" class="d-flex justify-content-center gap-3">
+            <div *ngFor="let expertise of block.text2" class="slide-2-expertise-item">
+              {{ expertise }}
+            </div>
           </div>
         </ng-container>
       </div>

@@ -10,10 +10,29 @@
       "About": "Um",
       "Services": "Dienstleistungen",
       "Blog": "Blog",
-      "Contact": "Kontakt"
+      "Contact": "Kontakt",
+      "Feedback": "Rückmeldung"
     },
     "services": {
-      "title": "Unsere Dienstleistungen"
+      "title": "Unsere Dienstleistungen",
+      "webDevelopmentTitle": "Webentwicklung",
+      "webDevelopmentDescription": "Erstellen reaktionsfähiger und robuster Websites.",
+      "uiuxTitle": "UI/UX-Design",
+      "uiuxDescription": "Entwerfen intuitiver Schnittstellen für nahtlose Erlebnisse.",
+      "seoTitle": "SEO-Optimierung",
+      "seoDescription": "Verbessern Sie das Ranking und die Online-Sichtbarkeit Ihrer Site.",
+      "mobileAppTitle": "Mobile Anwendung",
+      "mobileAppDescription": "Erstellen einer robusten mobilen Anwendung für Android",
+      "eLearningTitle": "E-Lernen",
+      "eLearningDescription": "Wir bieten Online-Schulungen an.",
+      "businessSolutionTitle": "Geschäftslösung",
+      "businessSolutionDescription": "Wir bieten unseren Kunden Geschäftslösungen."
+    },
+    "clientFeedback": {
+      "title": "Kundenfeedback",
+      "feedback1": "Die Zusammenarbeit mit diesem Team war eine fantastische Erfahrung. Ihre Professionalität und ihr Engagement sind unübertroffen.",
+      "feedback2": "Ihr Entwicklungsprozess ist transparent und effektiv. Sehr empfehlenswert aufgrund der Qualität und pünktlichen Lieferung.",
+      "feedback3": "Hervorragende Kommunikation und Unterstützung während des gesamten Projekts. Wir sind mit den Ergebnissen äußerst zufrieden."
     },
     "contact": {
       "title": "Nehmen Sie Kontakt auf",
@@ -24,7 +43,13 @@
       "email": "Kontakt raffold.com",
       "callTitle": "Rufen Sie uns an",
       "call": "+91 96325 87415",
-      "followTitle": "Folgen Sie uns"
+      "followTitle": "Folgen Sie uns",
+      "sendMessage": "Senden Sie uns eine Nachricht",
+      "textBox1": "Ihr Name",
+      "textBox2": "Ihre E-Mail-Adresse",
+      "textBox3": "Ihr Firmenname (optional)",
+      "textBox4": "Ihre Nachricht",
+      "sendButton": "Nachricht senden"
     },
     "language": "English"
   }

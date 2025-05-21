@@ -1,6 +1,6 @@
 <div class="container my-4">
   <div class="row">
-      <h2 class="text-center title">Our Services</h2>
+      <h2 class="text-center title">{{ translation.title }}</h2>
     </div>
   <div class="d-flex justify-content-between align-items-center mb-2">
 
@@ -18,8 +18,10 @@
       <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 0 && currentIndex + 3 > 0">
         <div class="card h-100 mx-2">
           <div class="card-body">
-            <h4 class="card-title cardTitle">Web Development</h4>
-            <h6 class="card-text cardDescription">Creating responsive and robust websites.</h6>
+            <div class="cardIcon"><fa-icon [icon]="faLaptopCode"></fa-icon></div>
+            <h4 class="card-title cardTitle">{{ translation.webDevelopmentTitle }}</h4>
+            <h6 class="card-text cardDescription">{{ translation.webDevelopmentDescription }}</h6>
+            <div><img src="../../../../assets/web-dev.png" alt="Section 1 Logo" width="300" height="250"></div>
           </div>
         </div>
       </div>
@@ -28,8 +30,10 @@
       <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 1 && currentIndex + 3 > 1">
         <div class="card h-100 mx-2">
           <div class="card-body">
-            <h5 class="card-title cardTitle">UI/UX Design</h5>
-            <h6 class="card-text cardDescription">Designing intuitive interfaces for seamless experiences.</h6>
+            <div class="cardIcon"><fa-icon [icon]="faCode"></fa-icon></div>
+            <h5 class="card-title cardTitle">{{ translation.uiuxTitle }}</h5>
+            <h6 class="card-text cardDescription">{{ translation.uiuxDescription }}</h6>
+            <div><img src="../../../../assets/ui-ux.png" alt="Section 1 Logo" width="300" height="250"></div>
           </div>
         </div>
       </div>
@@ -38,8 +42,10 @@
       <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 2 && currentIndex + 3 > 2">
         <div class="card h-100 mx-2">
           <div class="card-body">
-            <h5 class="card-title cardTitle">SEO Optimization</h5>
-            <h6 class="card-text cardDescription">Improving your site ranking and visibility online.</h6>
+            <div class="cardIcon"><fa-icon [icon]="faSearchengin"></fa-icon></div>
+            <h5 class="card-title cardTitle">{{ translation.seoTitle }}</h5>
+            <h6 class="card-text cardDescription">{{ translation.seoDescription }}</h6>
+            <div><img src="../../../../assets/seo.png" alt="Section 1 Logo" width="300" height="250"></div>
           </div>
         </div>
       </div>
@@ -48,8 +54,10 @@
       <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 3 && currentIndex + 3 > 3">
         <div class="card h-100 mx-2">
           <div class="card-body">
-            <h5 class="card-title cardTitle">Mobile Application</h5>
-            <h6 class="card-text cardDescription">Creating mobile robust mobile application for android</h6>
+            <div class="cardIcon"><fa-icon [icon]="faMobileScreen"></fa-icon></div>
+            <h5 class="card-title cardTitle">{{ translation.mobileAppTitle }}</h5>
+            <h6 class="card-text cardDescription">{{ translation.mobileAppDescription }}</h6>
+            <div><img src="../../../../assets/mobile.png" alt="Section 1 Logo" width="300" height="250"></div>
           </div>
         </div>
       </div>
@@ -58,8 +66,10 @@
       <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 4 && currentIndex + 3 > 4">
         <div class="card h-100 mx-2">
           <div class="card-body">
-            <h5 class="card-title cardTitle">E Learning</h5>
-            <h6 class="card-text cardDescription">We provide online training. </h6>
+            <div class="cardIcon"><fa-icon [icon]="faChalkboardUser"></fa-icon></div>
+            <h5 class="card-title cardTitle">{{ translation.eLearningTitle }}</h5>
+            <h6 class="card-text cardDescription">{{ translation.eLearningDescription }}</h6>
+            <div><img src="../../../../assets/learning.png" alt="Section 1 Logo" width="300" height="250"></div>
           </div>
         </div>
       </div>
@@ -68,8 +78,10 @@
       <div class="col-12 col-sm-4 text-center" *ngIf="currentIndex <= 5 && currentIndex + 3 > 5">
         <div class="card h-100 mx-2">
           <div class="card-body">
-            <h5 class="card-title cardTitle">Business Solution</h5>
-            <h6 class="card-text cardDescription">We provide business solutions for client.</h6>
+            <div class="cardIcon"><fa-icon [icon]="faBriefcase"></fa-icon></div>
+            <h5 class="card-title cardTitle">{{ translation.businessSolutionTitle }}</h5>
+            <h6 class="card-text cardDescription">{{ translation.businessSolutionDescription }}</h6>
+            <div><img src="../../../../assets/business.png" alt="Section 1 Logo" width="300" height="250"></div>
           </div>
         </div>
       </div>

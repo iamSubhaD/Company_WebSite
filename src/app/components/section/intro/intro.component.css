@@ -1,21 +1,75 @@
 #intro {
   padding-top: 3rem;
+  position: relative;
 }
+
+.carousel-wrapper {
+  position: relative;
+}
+
+/* Progress bar container placed absolutely on top inside the carousel */
+.carousel-progress-container {
+  position: absolute;
+  top: 26rem;
+  left: 45%;
+  right: 0;
+  height: 6px;
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.progress-indicator {
+  /* flex: 1; */
+  width: 2rem;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 6px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  width: 0%;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.progress-bar.active {
+  animation-name: progressFill;
+  animation-play-state: running;
+}
+
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Other existing styles */
 
 .slide-container {
   height: 400px;
+  padding-top: 30px; /* Give some space so indicators don't overlap content */
 }
 
 /* Backgrounds */
 .bg-slide-1 {
-  background: radial-gradient(circle,rgba(174, 215, 238, 1) 0%, rgba(148, 233, 151, 1) 100%);
+  background: radial-gradient(circle, rgba(174, 215, 238, 1) 0%, rgba(148, 233, 151, 1) 100%);
 }
 
 .bg-slide-2 {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
-/* Text styles */
+/* Text styles (unchanged) */
 .slide-1-text-1 {
   color: black;
   font-weight: 800;
@@ -24,21 +78,22 @@
   border-radius: 10px;
   max-width: 60%;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+ background: linear-gradient(
+        90deg,
+        #fff,
+        #fff,
+        #ffd700,
+        #fff,
+        #fff
+      );
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: shine 2s linear infinite;
 }
 
-.slide-1-text-1::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, white, transparent);
-  transform: skewX(-25deg);
-  animation: shine 4s infinite linear;
-}
 
 .slide-1-text-2 {
   color: black;
@@ -59,28 +114,20 @@
   text-align: left;
 }
 
-/* .slide-2-text-2 {
-  color: black;
-  font-size: 24px;
-  background-color: #00000066;
-  padding: 8px;
-  border: 2px solid yellow;
-  text-align: left;
-  animation: fadeInOut 6s ease-in-out infinite;
-} */
-
-.slide-2-expertise {
-  padding-top: 0.5rem;
-}
-
-/* Style for individual expertise boxes */
 .slide-2-expertise-item {
   color: white;
   font-size: 24px;
   background-color: #00000066;
-  padding: 8px 15px; /* Adjust padding as needed */
+  padding: 8px 15px;
   border: 2px solid yellow;
-  border-radius: 5px; /* Optional: Add rounded corners */
-  text-align: center; /* Center the text within the box */
+  border-radius: 5px;
+  text-align: center;
   animation: fadeInOut 2s ease-in-out infinite;
+}
+
+
+
+
+::ng-deep ngb-carousel .carousel-indicators {
+  display: none !important;
 }
