@@ -31,4 +31,12 @@ export class HeaderComponent {
   private getFlagPath(lang: 'en' | 'de'): string {
     return `assets/flags/${lang}.png`;
   }
+
+  scrollTo(sectionId: string): void {
+  const el = document.getElementById(sectionId);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
 }
